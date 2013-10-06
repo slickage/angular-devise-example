@@ -28,9 +28,8 @@ angular.module('AngularDeviseExample', ['ngRoute', 'sessionService'])
   }])
   .config(['$routeProvider', function($routeProvider){
     $routeProvider
-      .when('/', {templateUrl:'/home/index.html'})
-      /* .when('/record', {templateUrl:'/record/index.html', controller:RecordCtrl})
-      .when('/users/login', {templateUrl:'/users/login.html', controller:UsersCtrl})
-      .when('/users/register', {templateUrl:'/users/register.html', controller:UsersCtrl}); 
-      */
+      .when('/', {templateUrl:'/tmpl/home/index.html'})
+      // .when('/record', {templateUrl:'/record/index.html', controller:RecordCtrl})
+      .when('/users/login', {templateUrl:'/tmpl/users/login.html', controller:UsersCtrl})
+      .when('/users/register', {templateUrl:'/tmpl/users/register.html', controller:UsersCtrl}); 
   }]);
