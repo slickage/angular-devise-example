@@ -7,13 +7,17 @@
     <title>Angular Devise Example</title>
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= csrf_meta_tags %>
-</head>
-<body>
-  <div class="container-narrow">
-      <div ng-view></div>
-  </div>
+  </head>
+  <body>
+    <div class="container-narrow">
+        <div ng-view></div>
+    </div>
 
-  <%= javascript_include_tag "application" %>
-</body>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-resource.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-cookies.js"></script>
+    <%= javascript_include_tag "application" %>
+  </body>
 </html>
 
